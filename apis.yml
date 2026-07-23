@@ -1,8 +1,24 @@
 aid: asula
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/asula.png
 name: Asula
-description: 'Asula is a company surfaced as a portfolio company of electric-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Asula is a Bitcoin company building the next generation of financial products at the
+  intersection of bitcoin, blockchain infrastructure, and finance. The company is developing a mobile
+  app that lets people buy, sell, and borrow against their Bitcoin, spanning a mobile wallet with
+  seamless onboarding, cross-chain swaps, and a lending protocol. Asula has raised roughly $6.7M from
+  Electric Capital, Framework Ventures, and Figment Capital, and ships two products, Bedlam and Dawn.
+  As of July 2026 Asula publishes a minimal landing page and careers portal only, with no public
+  developer API, SDK, OpenAPI, or documentation surface.'
 url: https://raw.githubusercontent.com/api-evangelist/asula/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Crypto
+- Bitcoin
+- Blockchain
+- Finance
+- Fintech
+- Lending
+- Wallet
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/asula-domain-security.yml
 - type: Website
   url: https://asula.xyz/
+- type: Careers
+  url: https://jobs.ashbyhq.com/asula
+- type: X
+  url: https://x.com/asula_labs
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
